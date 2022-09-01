@@ -1,0 +1,134 @@
+   LEAD.DOC
+
+VARIABLE  COLUMN  RECORD   DESCRIPTION
+  1        1-3      1        IDENTIFICATION NUMBER
+
+  2         5       1        RECORD NUMBER
+
+  3         7       1        AREA - RESIDENCE ON AUG'72
+                              1=0-1 MILES FROM SMELTER
+                              2=1-2.5 MILES
+                              3=2.5-4.1 MILES
+
+  4        9-12     1        AGE E.G. 1011=10 YEARS 11 MONTHS
+
+  5         14      1        SEX  1=MALE  2=FEMALE
+
+       VARIABLES 6-19 CONTAIN IQ TEST RESULTS
+
+  6        16-17    1        INF - INFORMATION SUBTEST IN WISC AND WPPSI
+
+  7        19-20    1        COMP - COMPREHENSION SUBTEST IN WISC AND WPPSI
+
+  8        22-23    1        AR - ARITHMETIC SUBTEST IN WISC AND WPPSI
+
+  9        25-26    1        DS - DIGIT SPAN SUBTEST(WISC) AND SENTENCE
+                                  COMPLETION(WPPSI)
+
+ 10        28-29    1        V/RAW - RAW SCORE/VERBAL IQ (THIS IS TOTAL OF
+                                     SCORES 5-8)
+
+ 11        31-32    1        PC - PICTURE COMPLETION SUBTEST IN WISC AND WPPSI
+
+ 12        34-35    1        BD - BLOCK DESIGN SUBTEST IN WISC AND WPPSI
+
+ 13        37-38    1        OA - OBJECT ASSEMBLY SUBTEST(WISC), ANIMAL HOUSE
+                                  SUBTEST(WPPSI)
+
+ 14        40-41    1        COD - CODING SUBTEST(WISC), GEOMETRIC DESIGN
+                                   SUBTEST(WPPSI)
+
+ 15        43-44    1        P/RAW - RAW SCORE/PERFORMANCE IQ (TOTAL OF SCORES
+                                     IN 10-13)
+
+ 16        46-47    1        HH/INDEX - HOLLINGSHEAD INDEX OF SOCIAL STATUS
+
+ 17        49-51    1        IQV - VERBAL IQ
+
+ 18        53-55    1        IQP - PERFORMANCE IQ
+
+ 19        57-59    1        IQF - FULL SCALE IQ (NOT SUM OR AVERAGE OF IQV
+                                   AND IQP)
+
+ 20         61      1        TYPE OF IQ TEST   1=WISC  2=WPPSI
+                              (WISC USUALLY GIVEN TO CHILDREN GE 5 YRS 1 MONTH
+                               OF AGE
+                               WPPSI USUALLY GIVEN TO CHILDREN LE 5YRS OF AGE)
+
+ 21         63      1        GROUP - BLOOD LEAD LEVEL GROUP
+
+                              1=BLOOD LEAD LEVELS BELOW 40 MICROGRAMS/100ML IN
+                                BOTH 1972 & 1973
+                              2=BLOOD LEAD LEVELS GREATER THAN OR EQUAL TO
+                                40 MICROGRAMS/100ML
+                                IN BOTH 72 & 73 OR A LEVEL GREATER THAN OR
+                                EQUAL TO 40
+                                IN 73 ALONE (3 CASES ONLY)
+                              3=BLOOD LEAD LEVELS GREATER THAN OR EQUAL TO
+                                40 MICROGRAMS/100ML
+                                IN 72 AND LESS THAN 40 IN 73
+
+ 22        65-66    1        LD72 - BLOOD LEAD VALUES (MICROGRAMS/100ML ) IN72
+                                    MISSING=99
+
+ 23        68-69    1        LD73 - BLOOD LEAD VALUES (MICROGRAMS/100ML ) IN 73
+
+ 24         71      1        FST2YRS - DID CHILD LIVE FOR 1ST 2 YRS WITHIN
+                              1 MILE OF SMELTER
+
+ 25        73-74    1        TOTYRS - TOTAL NUMBER OF YEARS SPENT WITHIN
+                              4.1 MILES OF SMELTER
+
+
+ 26        1-3      2        IDENTIFICATION NUMBER
+
+ 27         5       2        RECORD NUMBER
+
+      VARIABLES 28-32 CONTAIN SYMPTOM DATA (AS REPORTED BY PARENTS)
+
+ 28         7       2        PICA   1=YES  2=NO
+
+ 29         9       2        COLIC  1=YES  2=NO
+
+ 30         11      2        CLUMSINESS  1=YES  2=NO
+
+ 31         13      2        IRRITABILITY  1=YES  2=NO
+
+ 32         15      2        CONVULSIONS  1=YES  2=NO
+
+      VARIABLES 33-40 CONTAIN NEUROLOGICAL TEST DATA
+       IF THE DATA IS MISSING THERE IS A -1.
+
+ 33        17-18    2        # OF TAPS FOR RIGHT HAND IN THE 2-PLATE TAPPING
+                              TEST  (#TAPS IN ONE 10 SECOND TRIAL)
+                              MISSING=99
+
+ 34        20-21    2        # OF TAPS FOR LEFT HAND IN THE 2-PLATE TAPPING TEST
+                                (#TAPS IN ONE 10 SECOND TRIAL)
+                              MISSING=99
+
+ 35        23-24    2        VISUAL REACTION TIME RIGHT HAND (MILLISECONDS)
+                              MISSING=99
+
+ 36        26-27    2        VISUAL REATION TIME LEFT HAND (MILLISECONDS)
+                              MISSING=99
+
+ 37        29-30    2        AUDITORY REACTION TIME RIGHT HAND (MILLISECONDS)
+                              MISSING=99
+
+ 38        32-33    2        AUDITORY REACTION TIME LEFT HAND (MILLISECONDS)
+                              MISSING=99
+
+ 39        35-36    2        FINGER-WRIST TAPPING TEST RIGHT HAND
+                              (# TAPS IN ONE 10 SECOND TRIAL)
+                              MISSING=99
+
+ 40        38-39    2        FINGER-WRIST TAPPING TEST LEFT HAND
+                              (#TAPS IN ONE 10 SECOND TRIAL)
+                              MISSING=99
+
+ 41        41-42    2        WWPS - WERRY-WEISS-PETERS SCALE FOR HYPERACTIVITY
+                              0=NO ACTIVITY . . . . 4=SEVERLY HYPERACTIVE
+                              (AS REPORTED BY PARENTS)
+                              MISSING=99
+
